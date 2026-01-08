@@ -10,9 +10,18 @@ resources:
 builder:
   resources:
     excludes:
+      - "/test/**"
+      - "/localService/**"
       - /test/**
       - /localService/**
   customTasks:
+    - name: ui5-task-zipper
+      afterTask: generateVersionInfo
+      configuration:
+        archiveName: procurement
+        relativePaths: true
+        additionalFiles:
+          - xs-app.json
     - name: ui5-task-zipper
       afterTask: generateCachebusterInfo
       configuration:

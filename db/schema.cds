@@ -1,4 +1,5 @@
 namespace PMS;
+using from '@sap/cds-common-content'; //used for global currency values to be loaded in table
 
 
 using { managed,cuid, Currency } from '@sap/cds/common';

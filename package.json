@@ -5,6 +5,7 @@
   "dependencies": {
     "@cap-js/hana": "^2",
     "@sap/cds": "^9",
+    "@sap/cds-common-content": "^3.1.0",
     "@sap/xssec": "^4",
     "express": "^4"
   },
@@ -27,7 +28,9 @@
     "requires": {
       "[production]": {
         "auth": "xsuaa",
-        "db": "hana"
+        "db": "hana",
+        "destinations": true,
+        "html5-repo": true
       },
       "connectivity": true,
       "destinations": true,
@@ -38,12 +41,13 @@
   "workspaces": [
     "app/*"
   ],
-  "odata":{
-    "version":"v4"
-  },"services":{
-    "CatalogService":{
-      "kind":"odata",
-      "path":"/odata/v4/procurement"
+  "odata": {
+    "version": "v4"
+  },
+  "services": {
+    "CatalogService": {
+      "kind": "odata",
+      "path": "/odata/v4/procurement"
     }
   },
   "sapux": [

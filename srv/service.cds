@@ -77,5 +77,7 @@ annotate ProcurementService.POItem with @(
             { Value: Quantity, Label:'Quantity' },
             { Value: Price, Label:'Price' }
         ],
-    }
+        NavigationTarget: false
+    },
+    
 );

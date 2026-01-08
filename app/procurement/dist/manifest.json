@@ -1,5 +1,5 @@
 {
-	"_version": "1.60.0",
+	"_version": "1.61.0",
 	"sap.app": {
 		"id": "procurement",
 		"type": "application",
@@ -39,7 +39,8 @@
 					"signature": {
 						"parameters": {},
 						"additionalParameters": "allowed"
-					}
+					},
+					"subTitle": "{{PurchaseOrder-display.flpSubtitle}}"
 				}
 			}
 		}
@@ -159,14 +160,7 @@
 					"options": {
 						"settings": {
 							"editableHeaderContent": false,
-							"contextPath": "/PurchaseOrder",
-							"navigation": {
-								"Items": {
-									"detail": {
-										"route": "POItemObjectPage"
-									}
-								}
-							}
+							"contextPath": "/PurchaseOrder"
 						}
 					}
 				},
