@@ -1,0 +1,15 @@
+{
+  "xsappname": "PMS",
+  "tenant-mode": "dedicated",
+  "scopes": [],
+  "attributes": [],
+  "role-templates": [],
+  "oauth2-configuration": {
+    "redirectUris": [
+      "https://localhost:4004/**",
+      "https://*trial.applicationstudio.cloud.sap/**",
+      "https://*.cfapps.us10-001.hana.ondemand.com/**",
+      "https://*.cf.us10-001.hana.ondemand.com/**"
+    ]
+  }
+}
