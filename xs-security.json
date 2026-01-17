@@ -9,7 +9,8 @@
       "https://localhost:4004/**",
       "https://*trial.applicationstudio.cloud.sap/**",
       "https://*.cfapps.us10-001.hana.ondemand.com/**",
-      "https://*.cf.us10-001.hana.ondemand.com/**"
+      "https://*.cf.us10-001.hana.ondemand.com/**",
+      "https://*.launchpad.cfapps.us10.hana.ondemand.com/**"
     ]
   }
 }

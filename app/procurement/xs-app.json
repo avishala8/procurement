@@ -3,6 +3,12 @@
   "authenticationMethod": "route",
   "routes": [
     {
+      "source": "^/odata/v4/procurement/(.*)$",
+      "target": "$1",
+      "destination": "srv-api",
+      "authenticationType": "xsuaa"
+    },
+    {
       "source": "^../(.*)$",
       "target": "../$1",
       "destination": "PMS-html5-repository",

@@ -153,11 +153,21 @@ resources:
             ProxyType: Internet
             Type: HTTP
             URL: https://ui5.sap.com
+          - Authentication: OAuth2UserTokenExchange
+            Name: srv-api
+            ServiceInstanceName: PMS-auth
+            ServiceKeyName: PMS-auth-key
+            ProxyType: Internet
+            Type: HTTP
+            URL: ~{srv-api/srv-url}
+            HTML5.DynamicDestination: true
+            HTML5.ForwardAuthToken: true
           existing_destinations_policy: update
     service: destination
     service-plan: lite
   requires:
   - name: srv-api
+  - name: PMS-auth
 - name: PMS-html5-repo-host
   type: org.cloudfoundry.managed-service
   parameters:
